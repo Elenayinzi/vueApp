@@ -1,5 +1,37 @@
 环境安装：
-安装脚手架：npm install -g @vue/cli
+安装脚手架：npm install -g @vue/cli (Mac由于权限问题前面加上sudo)
 查看版本：vue -V
 创建项目：vue create vue-learn  cd vue-learn npm run serve
 npm 清除缓存：npm cache clean -force
+模板语法：
+    1.文本{{ msg }}
+    2.原始html: v-html="rawhtml"
+    3.特性：v-bind:id="id"
+    4.表达式：{{ number+1 }}  {{ ok?'yes':'no'}}
+props:定义变量接受其他组件的传过来的参数
+data:定义模板中放置的数据，返回的是object对象，data为什么是一个函数？多实例共享？
+mvvm:数据驱动模板
+指令：
+    1.v-if,v-else,v-else-if:不满足条件时dom不存在
+    2.v-bind
+    3.v-on:绑定事件
+    4.v-show:节点存在，类似display
+    5.v-hide:
+    6.v-once:变量只改变一次
+    7.v-html
+    8.自定义指令：
+        钩子函数：bind,inserted,update,componentUpdated,unbind;
+        钩子函数的参数el(被绑定的元素),binding(一个对象，有很多属性),vnode,oldVnode
+修饰符：v-on:submit.prevent=""
+缩写：v-bind:id == :id; v-on:click == @click
+计算属性：具有依赖关系的数据监听，当数据a变化时，b也变化
+类与样式：
+    对象语法：适合较多的class名或者动态class名
+    数组语法：适合较少的class名
+条件&列表渲染：
+    基础用法：
+        v-if
+        v-else
+        for
+    分组用法：
+        
