@@ -1,0 +1,15 @@
+web应用框架:https://koa.bootcss.com/
+koa-generator：
+    安装：npm install -g koa-generator
+    创建项目：koa2 -e projectname;npm install;运行 DEBUG=koa* & npm start koa2-learn;localhost:3000;
+async和await:
+    异步的概念：以前使用回调的方式类似setTimeout，现在es6用promise对象.then
+    理解async和await：await是在异步函数async中使用的
+    async和promise的区别：async同步的写法执行异步的操作;promise和回调都是级联的写法
+    await后面是一个promise对象
+koa2中间件：
+    原理:
+    自定义koa2中间件:
+koa2路由：
+    路由写法:
+cookie和session：

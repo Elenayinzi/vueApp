@@ -1,0 +1,9 @@
+mongoose基础：
+    mongodb安装:菜鸟教程brew安装方式mac
+    mac查看是否安装成功：which mongod
+    启动服务:mongod
+    可视化数据库管理工具：robo 3T--robomongo.org
+    mongoose中文文档网址：mongoose.shujuwangjue.com
+    安装mongoose:npm i mongoose
+    Service Name : MongoDB
+redis基础：

@@ -1,14 +1,18 @@
+vue.js官网：https://cn.vuejs.org
+vue-cli官网：https://cli.vuejs.org
+vue-router官网：https://router.vuejs.org
+vuex官网：https://vuex.vuejs.org
+
 环境安装：
-安装脚手架：npm install -g @vue/cli (Mac由于权限问题前面加上sudo)
-查看版本：vue -V
-创建项目：vue create vue-learn  cd vue-learn npm run serve
-npm 清除缓存：npm cache clean -force
+    安装脚手架：npm install -g @vue/cli (Mac由于权限问题前面加上sudo)
+    查看版本：vue -V
+    创建项目：vue create vue-learn  cd vue-learn npm run serve
+    npm 清除缓存：npm cache clean -force
 模板语法：
     1.文本{{ msg }}
     2.原始html: v-html="rawhtml"
     3.特性：v-bind:id="id"
     4.表达式：{{ number+1 }}  {{ ok?'yes':'no'}}
-props:定义变量接受其他组件的传过来的参数
 data:定义模板中放置的数据，返回的是object对象，data为什么是一个函数？多实例共享？
 mvvm:数据驱动模板
 指令：
@@ -34,4 +38,33 @@ mvvm:数据驱动模板
         v-else
         for
     分组用法：template
+事件处理:
+    1.事件定义及缩写
+    2.内联写法：传参
+    3.事件修饰符:.stop;.prevent;.capture;.self;.once;.passive;
+    4.按键修饰符：.enter;按键码修饰符；系统修饰符
+组件：
+    props:定义变量接受其他组件的传过来的参数，父组件传给子组件
+    自定义事件:子组件传给父组件；内建的$emit函数
+    slot:插槽
+    跨组件的通信：vuex
+路由：vue-router
+    安装路由：npm i vue-router
+    配置路由：路由配置，配置实例化，在index.html下增加<router-view></router-view>
+
+vuex:状态管理模式，多个组件之间共用一份数据;安装vuex:npm i vuex;新建store.js,定义state,定义mutation,定义action,在模板中触发actions;
+    组件dispatch触发actions,actions commit提交找到mutations, mutate改变state数据，state数据渲染到组件模板上
+    State:多个组件共享的数据，组件不能直接访问和操作
+    Mutations:直接操作state数据的,定义如何改变数据
+    Actions:告诉mutations在什么时候去改变state数据的行为
+
+谷歌浏览器安装vue-devtools:
+    git地址https://github.com/vuejs/vue-devtools
+    npm install
+    npm run build
+    打开shells>chrome>manifest.json并把json文件里的"persistent":false改成true
+    打开chrome浏览器，打开更多工具>扩展程序；
+    再点击加载已解压的扩展程序，然后把shells>chrome文件夹放入
+vscode的html.json;vue.json中设置默认模板简单一键输入提示出模板
+
 
