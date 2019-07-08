@@ -1,1 +1,31 @@
-工作流：
+工作流：https://zh.nuxtjs.org/guide/
+浏览器发出请求
+服务端检查是否有nuxtServerlnit配置（store action---vuex）
+middleware中间件
+validate()验证，配置路由做验证
+获取数据：asyncData()函数获取数据渲染组件，fetch()获取数据渲染vuex的store
+渲染render
+nuxt-link:重新走一步工作流
+安装nuxt.js:
+用vue-cli安装，全局安装vue-cli：npm install -g @vue/cli-init
+安装nuxt.项目：
+vue init nuxt-community/koa-template <project-name>
+cd <project-name>
+npm install (nrm use npm; nrm ls)
+npm i ajv@^6
+npm run dev
+安装babel:npm install -g babel-cli@6.26.0
+
+另一种安装方式：
+npx create-nuxt-app nutxjs-learn
+cd nutxjs-learn
+npm install
+支持es6单独安装babel:
+npm i babel-core babel-preset-es2015 babel-cli;
+在package.json-scripts:–exec babel-node;
+新建 .babelrc文件
+路由&示例：
+页面模板和示例：
+异步数据&示例&ssr剖析：
+vuex应用和示例：
+
