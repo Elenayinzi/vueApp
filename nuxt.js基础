@@ -29,3 +29,7 @@ npm i babel-core babel-preset-es2015 babel-cli;
 异步数据&示例&ssr剖析：
 vuex应用和示例：
 
+$ git rm -r --cached .idea              # 删除.idea文件夹
+$ git commit -m '删除.idea'             # 提交,添加操作说明
+$ git push -u origin master               # 将本次更改更新到github项目上去
+
