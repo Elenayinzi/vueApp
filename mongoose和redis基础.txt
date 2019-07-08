@@ -1,9 +1,21 @@
 mongoose基础：
     mongodb安装:菜鸟教程brew安装方式mac
     mac查看是否安装成功：which mongod
-    启动服务:mongod
+    创建放置数据库的根目录：sudo mkdir -p /data/db
+    启动服务: sudo mongod
     可视化数据库管理工具：robo 3T--robomongo.org
     mongoose中文文档网址：mongoose.shujuwangjue.com
     安装mongoose:npm i mongoose
     Service Name : MongoDB
+    停止服务：use admin;
+    db.shutdownServer();
+    增加数据：curl -d 'name=li&age=12' http://localhost:3000/users/addPerson
+    查询数据：curl -d 'name=li' http://localhost:3000/users/getPerson
+    更新数据：curl -d 'name=li&age=12' http://localhost:3000/users/updatePerson
+    删除数据：curl -d 'name=li' http://localhost:3000/users/removePerson
 redis基础：
+安装redis: 菜鸟教程
+mac下安装redis: brew install redis
+启动redis:brew services start redis 或 redis-server /usr/local/etc/redis.conf
+安装两个中间件：npm i koa-generic-session koa-redis
+redis看redis中的值：redis-cli ; keys *; get key; set key,value
