@@ -1,0 +1,37 @@
+工作流：https://zh.nuxtjs.org/guide/
+浏览器发出请求
+服务端检查是否有nuxtServerlnit配置（store action---vuex）
+middleware中间件
+validate()验证，配置路由做验证
+获取数据：asyncData()函数获取数据渲染组件，fetch()获取数据渲染vuex的store
+渲染render
+nuxt-link:重新走一步工作流
+安装nuxt.js:
+用vue-cli安装，全局安装vue-cli：npm install -g @vue/cli-init
+安装nuxt.项目：
+vue init nuxt-community/koa-template <project-name>
+cd <project-name>
+npm install (nrm use npm; nrm ls)
+npm i ajv@^6
+npm run dev
+安装babel:npm install -g babel-cli@6.26.0
+
+另一种安装方式：
+npx create-nuxt-app nutxjs-learn
+cd nutxjs-learn
+npm install
+支持es6单独安装babel:
+npm i babel-core babel-preset-es2015 babel-cli;
+在package.json-scripts:–exec babel-node;
+新建 .babelrc文件
+eslint: npm i eslint-plugin-html@^3
+路由&示例：创建即配置，创建了文件会自动配置好路由在浏览器可访问
+页面模板和示例：页面组件在pages中，模板页面在components中;自定义模板页面；
+异步数据&示例&ssr剖析：npm i --save axios
+vuex应用和示例：
+vue SSR工作原理:由于vue 单页面对seo搜索引擎不支持，vue官网给了一个解决方案是ssr服务端渲染来解决seo这个问题；工作原理；渲染流程;
+
+$ git rm -r --cached .idea              # 删除.idea文件夹
+$ git commit -m '删除.idea'             # 提交,添加操作说明
+$ git push -u origin master               # 将本次更改更新到github项目上去
+
