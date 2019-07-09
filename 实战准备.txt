@@ -1,0 +1,9 @@
+1.环境准备
+node.js：node -v
+vue: vue -V --在项目中验证版本
+npm: npm -v
+nuxt:在项目中验证版本
+webpack: webpack -v   npm install webpack -g   npm install webpack-cli -g
+全局安装npx：npm install -g npx
+创建项目：npx create-nuxt-app mt-app
+npm install --update-binary
