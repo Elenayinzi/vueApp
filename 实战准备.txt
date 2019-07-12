@@ -28,3 +28,14 @@ npm install babel-preset-env --save-dev
         }]
     ]
 }
+
+
+需求分析：
+模板设计:
+city user    topBar        nav            --header
+logo  search searchBar suggestion banner  
+content                                   --body
+footbar                                   --footer
+组件设计
+数据结构设计
+接口设计
