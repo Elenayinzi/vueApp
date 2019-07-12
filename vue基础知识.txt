@@ -67,4 +67,7 @@ vuex:状态管理模式，多个组件之间共用一份数据;安装vuex:npm i 
     再点击加载已解压的扩展程序，然后把shells>chrome文件夹放入
 vscode的html.json;vue.json中设置默认模板简单一键输入提示出模板
 
+$ git rm -r --cached .idea              # 删除.idea文件夹
+$ git commit -m '删除.idea'             # 提交,添加操作说明
+$ git push -u origin master               # 将本次更改更新到github项目上去
 

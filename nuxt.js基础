@@ -31,7 +31,3 @@ eslint: npm i eslint-plugin-html@^3
 vuex应用和示例：
 vue SSR工作原理:由于vue 单页面对seo搜索引擎不支持，vue官网给了一个解决方案是ssr服务端渲染来解决seo这个问题；工作原理；渲染流程;
 
-$ git rm -r --cached .idea              # 删除.idea文件夹
-$ git commit -m '删除.idea'             # 提交,添加操作说明
-$ git push -u origin master               # 将本次更改更新到github项目上去
-

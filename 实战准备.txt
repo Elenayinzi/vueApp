@@ -7,3 +7,24 @@ webpack: webpack -v   npm install webpack -g   npm install webpack-cli -g
 全局安装npx：npm install -g npx
 创建项目：npx create-nuxt-app mt-app
 npm install --update-binary
+
+支持es6单独安装babel:
+npm i babel-core babel-preset-es2015 babel-cli;
+npm i babel-cli babel-polyfill babel-preset-es2015 babel-preset-stage-2
+在package.json-scripts:–exec babel-node;
+新建 .babelrc文件
+eslint支持: npm i eslint-plugin-html@^3
+
+npm install -g babel-cli
+npm install babel-preset-env --save-dev
+–exec babel-node;
+{
+    "presets": ["env"]
+}
+{
+    "presets": [
+        ["env", {
+            "modules": false
+        }]
+    ]
+}
