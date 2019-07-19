@@ -75,4 +75,3 @@ $ git push -u origin master               # 将本次更改更新到github项目
 proxy:{
 	'/api':'url
 }
-

@@ -5,7 +5,7 @@
   "author": "ElenaLiaoYin",
   "private": true,
   "scripts": {
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server –-exec babel-node",
     "build": "nuxt build",
@@ -20,7 +20,9 @@
     "element-ui": "^2.4.11",
     "eslint-plugin-html": "^3.2.2",
     "koa": "^2.6.2",
-    "nuxt": "^2.0.0"
+    "node-sass": "^4.12.0",
+    "nuxt": "^2.0.0",
+    "sass-loader": "^7.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
