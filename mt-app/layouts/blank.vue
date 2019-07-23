@@ -1,7 +1,7 @@
 <template>
-    <div class="layout-blank">
-        <nuxt />
-    </div>
+  <div class="layout-blank">
+    <nuxt />
+  </div>
 </template>
 
 <script>
