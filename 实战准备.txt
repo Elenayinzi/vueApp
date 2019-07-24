@@ -52,3 +52,21 @@ eslint语法报错问题：
 1."lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .":加上--fix
 2.npm run lint
 3.npm run dev
+
+
+数据结构设计：
+数据表：
+user：用户表
+areas：地区表
+menu：菜单表
+city：城市表
+pois：城市推荐表
+
+腾讯邮箱设置
+
+接口设计：
+/users/signup
+/users/siginin
+/users/verify
+/users/exit
+/users/getUser
