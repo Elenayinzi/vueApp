@@ -70,3 +70,20 @@ pois：城市推荐表
 /users/verify
 /users/exit
 /users/getUser
+
+
+安装包：
+npm i axios
+npm i mongoose
+koa-passport
+passport-local
+nodemailer
+koa-router
+koa-redis
+koa-bodyparser
+koa-generic-session
+
+启动redis：
+redis-server
+启动mongodb:
+mongod

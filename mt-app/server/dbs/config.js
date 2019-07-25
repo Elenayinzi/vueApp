@@ -10,13 +10,13 @@ export default {
     },
     smtp: {
         get host(){
-            return 'smtp.qq.com'
+            return 'smtp.163.com'
         },
         get user(){
-            return ''
+            return '13827469027@163.com'
         },
         get pass(){
-            return ''
+            return 'lgply0927'
         }
     },
     get code(){
