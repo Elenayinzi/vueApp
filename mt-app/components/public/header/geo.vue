@@ -1,5 +1,6 @@
 <template>
   <div class="m-geo">
+    <!-- {{ $tore.state.geo.position.city }} -->
     <i class="el-icon-location" />北京市
     <nuxt-link class="changeCity" to="/changeCity">
       切换城市

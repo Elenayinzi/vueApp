@@ -54,6 +54,18 @@ eslint语法报错问题：
 3.npm run dev
 
 
+<<<<<<< HEAD
+登陆注册接口
+城市服务接口
+城市切换接口
+
+导入数据：
+mongoimport -d student -c areas areas.bat
+接口签名：
+http://cp-tools.cn/sign
+输入用户id：2568052
+获取sign:
+=======
 数据结构设计：
 数据表：
 user：用户表
@@ -87,3 +99,4 @@ koa-generic-session
 redis-server
 启动mongodb:
 mongod
+>>>>>>> d7c14dbbdf6be22a18e45e938bf814458e27ddbf

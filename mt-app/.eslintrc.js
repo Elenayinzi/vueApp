@@ -8,11 +8,14 @@ module.exports = {
     parser: 'babel-eslint'
   },
   extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
+    'plugin:vue/recommended',
+  ],
+  // required to lint *.vue files
+  plugins: [
+    'vue'
   ],
   // add your custom rules here
   rules: {
-    'nuxt/no-cjs-in-config': 'off'
+    'linebreak-style': [0, 'error', 'windows']
   }
 }
