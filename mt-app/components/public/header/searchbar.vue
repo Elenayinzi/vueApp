@@ -12,17 +12,32 @@
           </button>
           <dl v-if="isHotPlace" class="hotPlace">
             <dt>热门搜索</dt>
+            <!-- $store.state.home.hotPlace.slice(0,5) -->
+            <!-- <dd
+              v-for="(item,idx) in $store.state.home.hotPlace.slice(0,5)"
+              :key="idx">
+              <a :href="'/products?keyword='+encodeURIComponent(item.name)">{{ item.name }}</a>
+            </dd> -->
             <dd v-for="(item,idx) in hotPlace" :key="idx">
               {{ item }}
             </dd>
           </dl>
           <dl v-if="isSearchList" class="searchList">
+            <!-- <dd
+              v-for="(item,idx) in searchList"
+              :key="idx">
+              <a :href="'/products?keyword='+encodeURIComponent(item.name)">{{ item.name }}</a>
+            </dd> -->
             <dd v-for="(item,idx) in searchList" :key="idx">
               {{ item }}
             </dd>
           </dl>
         </div>
         <p class="suggest">
+          <!-- <a
+            v-for="(item,idx) in $store.state.home.hotPlace.slice(0,5)"
+            :key="idx"
+            :href="'/products?keyword='+encodeURIComponent(item.name)">{{ item.name }}</a> -->
           <a href="#">欢乐魔方水上乐园</a>
           <a href="#">古北水镇</a>
           <a href="#">故宫博物院</a>
@@ -81,7 +96,7 @@
 </template>
 
 <script>
-import { setTimeout } from 'timers'
+import _ from 'lodash'
 export default {
   data() {
     return {
@@ -109,8 +124,18 @@ export default {
         self.isFocus = false
       }, 200)
     },
-    input: function () {
-    }
+    input:_.debounce(async function(){
+      // let self=this;
+      // let city=self.$store.state.geo.position.city.replace('市','')
+      // self.searchList=[]
+      // let {status,data:{top}}=await self.$axios.get('/search/top',{
+      //   params:{
+      //     input:self.search,
+      //     city
+      //   }
+      // })
+      // self.searchList=top.slice(0,10)
+    },300)
   }
 }
 </script>

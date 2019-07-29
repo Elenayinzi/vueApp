@@ -54,7 +54,6 @@ eslint语法报错问题：
 3.npm run dev
 
 
-<<<<<<< HEAD
 登陆注册接口
 城市服务接口
 城市切换接口
@@ -65,38 +64,6 @@ mongoimport -d student -c areas areas.bat
 http://cp-tools.cn/sign
 输入用户id：2568052
 获取sign:
-=======
-数据结构设计：
-数据表：
-user：用户表
-areas：地区表
-menu：菜单表
-city：城市表
-pois：城市推荐表
-
-腾讯邮箱设置
-
-接口设计：
-/users/signup
-/users/siginin
-/users/verify
-/users/exit
-/users/getUser
 
 
-安装包：
-npm i axios
-npm i mongoose
-koa-passport
-passport-local
-nodemailer
-koa-router
-koa-redis
-koa-bodyparser
-koa-generic-session
-
-启动redis：
-redis-server
-启动mongodb:
-mongod
->>>>>>> d7c14dbbdf6be22a18e45e938bf814458e27ddbf
+把数据用本地的方法填充完
