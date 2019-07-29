@@ -2,7 +2,7 @@ const state = () => ({position: {}})
 
 const mutations = {
     setPosition(state, val){
-        stat.position = val
+        state.position = val
     }
 }
 const actions = {
